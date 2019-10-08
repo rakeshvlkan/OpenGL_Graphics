@@ -1,0 +1,2 @@
+//namespace detail
+//namespace glm
