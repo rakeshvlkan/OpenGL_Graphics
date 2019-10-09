@@ -14,8 +14,8 @@
 #include<GLFW\glfw3.h>
 #include"Utility.h"
 
-#define NUM_COLS 300
-#define NUM_ROWS 300
+#define NUM_COLS 200
+#define NUM_ROWS 200
 #define NUM_INSTANCES NUM_COLS * NUM_ROWS
 #define WINDOW_WIDTH  1920
 #define WINDOW_HEIGHT 1200

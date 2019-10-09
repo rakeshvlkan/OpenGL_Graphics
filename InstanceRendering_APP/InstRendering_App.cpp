@@ -44,7 +44,7 @@ public:
 		float lastX = (float)WINDOW_WIDTH / 2.0;
 		float lastY = (float)WINDOW_HEIGHT / 2.0;
 		firstMouse = true;
-		m_instancingOptions = InstancingModes::No_Instancing;
+		m_instancingOptions = InstancingModes::Hardware_Instancing;
 	}
 	virtual ~App1()
 	{
