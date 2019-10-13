@@ -14,15 +14,16 @@ float m_floorVertices[] = {
 
 Floor::Floor(CameraClass *camera)
 {   
-
 	m_pFloorShader = new ShaderManager(); 
 	 m_pCamera = camera;
-	 m_pTexture = new TextureClass();
-	 m_pFloorModel = new ModelClass();
+	 m_pTexture = new TextureClass();	
 }
 
 Floor::~Floor()
-{
+{ 
+	SAFE_DELETE(m_pFloorShader);
+	SAFE_DELETE(m_pTexture);
+
 }
 
 void Floor::Init()

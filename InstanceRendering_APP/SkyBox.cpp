@@ -54,6 +54,8 @@ SkyBox::SkyBox(CameraClass *camera)
 
 SkyBox::~SkyBox()
 {
+	SAFE_DELETE(m_pCubemapTex);
+	SAFE_DELETE(m_skyBoxShader);
 }
 
 void SkyBox::Init(std::vector<std::string> faces)

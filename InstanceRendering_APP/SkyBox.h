@@ -10,51 +10,7 @@
 #include<GL\glew.h>
 #include<GLFW\glfw3.h>
 #include"FileClass.h"
-
-//skyboxVertices.  (glm::vec3(-1.0f, 1.0f, -1.0f))
-//	// positions          
-//	-1.0f,  1.0f, -1.0f,
-//	-1.0f, -1.0f, -1.0f,
-//	1.0f, -1.0f, -1.0f,
-//	1.0f, -1.0f, -1.0f,
-//	1.0f,  1.0f, -1.0f,
-//	-1.0f,  1.0f, -1.0f,
-//
-//	-1.0f, -1.0f,  1.0f,
-//	-1.0f, -1.0f, -1.0f,
-//	-1.0f,  1.0f, -1.0f,
-//	-1.0f,  1.0f, -1.0f,
-//	-1.0f,  1.0f,  1.0f,
-//	-1.0f, -1.0f,  1.0f,
-//
-//	1.0f, -1.0f, -1.0f,
-//	1.0f, -1.0f,  1.0f,
-//	1.0f,  1.0f,  1.0f,
-//	1.0f,  1.0f,  1.0f,
-//	1.0f,  1.0f, -1.0f,
-//	1.0f, -1.0f, -1.0f,
-//
-//	-1.0f, -1.0f,  1.0f,
-//	-1.0f,  1.0f,  1.0f,
-//	1.0f,  1.0f,  1.0f,
-//	1.0f,  1.0f,  1.0f,
-//	1.0f, -1.0f,  1.0f,
-//	-1.0f, -1.0f,  1.0f,
-//
-//	-1.0f,  1.0f, -1.0f,
-//	1.0f,  1.0f, -1.0f,
-//	1.0f,  1.0f,  1.0f,
-//	1.0f,  1.0f,  1.0f,
-//	-1.0f,  1.0f,  1.0f,
-//	-1.0f,  1.0f, -1.0f,
-//
-//	-1.0f, -1.0f, -1.0f,
-//	-1.0f, -1.0f,  1.0f,
-//	1.0f, -1.0f, -1.0f,
-//	1.0f, -1.0f, -1.0f,
-//	-1.0f, -1.0f,  1.0f,
-//	1.0f, -1.0f,  1.0f
-//};
+#include"Utility.h"
 
 class SkyBox
 {
@@ -69,7 +25,6 @@ private:
 
 	CameraClass* m_pCamera;
 	CubemapTexture* m_pCubemapTex;
-	ModelClass* m_pModel;
 	ShaderManager* m_skyBoxShader;
 	std::vector<glm::vec3> m_skyboxVertices;
 	unsigned int m_skyboxVAO, m_skyboxVBO;

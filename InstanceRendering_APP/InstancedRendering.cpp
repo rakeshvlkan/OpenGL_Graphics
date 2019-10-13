@@ -63,6 +63,8 @@ void InstancedRendering::Render()
 	// configure transformation matrices
 	glm::mat4 projection = m_camera->getPerspectiveProjection();
 	glm::mat4 view = m_camera->GetViewMatrix();
+	glEnable(GL_CULL_FACE);
+	glCullFace(GL_BACK);
 
 	if (m_instancingOptions == InstancingModes::No_Instancing)
 	{

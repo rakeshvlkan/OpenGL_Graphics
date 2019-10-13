@@ -27,8 +27,7 @@ class App1 : public ICallbacks, public DevApp
 public:
 	App1()
 	{
-		m_pGameCamera = NULL;
-		m_pGround = NULL;
+		m_pGameCamera = NULL;	
 		m_pInstancedRendering = NULL;
 		m_pSkyBox = NULL;
 		m_pFloor = NULL;
@@ -49,8 +48,9 @@ public:
 	virtual ~App1()
 	{
 		SAFE_DELETE(m_pGameCamera);
-		SAFE_DELETE(m_pGround);
 		SAFE_DELETE(m_pInstancedRendering);
+		SAFE_DELETE(m_pFloor);
+		SAFE_DELETE(m_pSkyBox);
 	}
 
 	void Init()
@@ -192,7 +192,6 @@ public:
 private:
 	long long m_currentTimeMillis;
 	CameraClass* m_pGameCamera;
-	ModelClass* m_pGround;
 	Floor* m_pFloor;
 	InstancedRendering *m_pInstancedRendering;
 	PersProjInfo m_persProjInfo;

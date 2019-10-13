@@ -58,8 +58,7 @@ private:
 	Floor *m_floor;
 	Text *m_text;	
 	InstancingModes m_instancingOptions;
-	int m_numModels;
-	
+	int m_numModels;	
 	glm::mat4* m_modelMatrices;
 };
 
